@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlugYInstall", "PlugYInstall.vcproj", "{66A1FF3D-F0DC-4D2D-BDB9-1A853A20C42D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Restore|Win32 = Restore|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66A1FF3D-F0DC-4D2D-BDB9-1A853A20C42D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{66A1FF3D-F0DC-4D2D-BDB9-1A853A20C42D}.Debug|Win32.Build.0 = Debug|Win32
+		{66A1FF3D-F0DC-4D2D-BDB9-1A853A20C42D}.Release|Win32.ActiveCfg = Release|Win32
+		{66A1FF3D-F0DC-4D2D-BDB9-1A853A20C42D}.Release|Win32.Build.0 = Release|Win32
+		{66A1FF3D-F0DC-4D2D-BDB9-1A853A20C42D}.Restore|Win32.ActiveCfg = Restore|Win32
+		{66A1FF3D-F0DC-4D2D-BDB9-1A853A20C42D}.Restore|Win32.Build.0 = Restore|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
