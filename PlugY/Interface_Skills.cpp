@@ -65,8 +65,8 @@ void STDCALL skillsPageMouseUp()
 	if ( active_SkillsPoints && !onRealm && D2isLODGame() && isOnButtonUnassignSkill(D2GetMouseX(),D2GetMouseY()))
 	{
 		log_msg("push up left button unassign skill\n");
-		if (btnSkillIsDown) 
-			updateServer(US_UNASSIGN_SKILLS);
+    if (btnSkillIsDown)
+      updateServer(US_UNASSIGN_SKILLS);
 	}
 	btnSkillIsDown = 0;
 }
@@ -143,11 +143,11 @@ FCT_ASM ( caller_skillsPageMouseDown )
 	RETN
 }}
 
-FCT_ASM( caller_skillsPageMouseUp_114 )
-  CALL skillsPageMouseUp
+/*FCT_ASM( caller_skillsPageMouseUp_114 )
+;CALL skillsPageMouseUp
   MOV EAX, 0x4ABC81
   JMP EAX
-}}
+}}*/
 
 FCT_ASM ( caller_skillsPageMouseUp )
 	CALL skillsPageMouseUp
@@ -243,9 +243,9 @@ void Install_InterfaceSkills()
 	//6FAE1112   > C745 18 00000000     MOV DWORD PTR SS:[EBP+18],0
 
 	// Manage mouse up
-	mem_seek R8(D2Client, 7BC40, 7BC40, 78466, 17558, 8C078, 80248, 795F8, 30AA8, ABE38);
+	mem_seek R8(D2Client, 7BC40, 7BC40, 78466, 17558, 8C078, 80248, 795F8, 30AA8, ABC96/*ABE38*/);
   if (version_D2Client == V114d) {
-    MEMT_REF4(0xFFFFFE45, caller_skillsPageMouseUp_114);
+    MEMT_REF4(/*0xFFFFFE45*/0xFFF745F6, caller_skillsPageMouseUp);
   }
   else {
     MEMJ_REF4(D2FreeWinMessage, caller_skillsPageMouseUp);//0xFFF93B0A
