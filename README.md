@@ -1,5 +1,7 @@
-# PlugY v12.00
+# PlugY v12.00 (Unofficial)
 This repository contains the source code for PlugY version 12.00 updated for 1.14d.
+
+Please note that I am not the original developer of PlugY (Yohann).  I took his source code for PlugY 11.02 and updated all the features to work on Diablo II 1.14d.
 
 <b>Please backup ALL your save files.  This has not been rigorously tested.</b>
 
